@@ -1,64 +1,39 @@
-# Python Corporate Trainer --- Phase 1
+# Python Full-Stack Trainer
 
-## Goal
+Corporate training curriculum: Python fundamentals to AI-powered full-stack applications.
+16 weeks, 80 sessions of about 3 hours. One running case study: **Acme Support Desk**.
 
-This repository prepares you to teach Python to:
+## Curriculum
+| # | Module | Days | Folder |
+|---|---|---|---|
+| 01 | Python Fundamentals | 10 | [01-python-fundamentals](01-python-fundamentals) |
+| 02 | Advanced Python | 10 | [02-advanced-python](02-advanced-python) |
+| 03 | Software Engineering | 5 | [03-software-engineering](03-software-engineering) |
+| 04 | SQL | 5 | [04-sql](04-sql) |
+| 05 | FastAPI | 7 | [05-fastapi](05-fastapi) |
+| 06 | PostgreSQL | 5 | [06-postgresql](06-postgresql) |
+| 07 | HTML, CSS, JavaScript | 8 | [07-html-css-javascript](07-html-css-javascript) |
+| 08 | React | 8 | [08-react](08-react) |
+| 09 | Full-Stack Projects | 8 | [09-fullstack-projects](09-fullstack-projects) |
+| 10 | AI-Assisted Development | 4 | [10-ai-assisted-development](10-ai-assisted-development) |
+| 11 | AI Full-Stack Projects | 10 | [11-ai-fullstack-projects](11-ai-fullstack-projects) |
 
--   a complete beginner/fresher
--   a working developer
--   an experienced developer in a corporate training environment
--   an interviewer who asks conceptual and practical questions
+Recommended teaching order: 04 SQL, 06 PostgreSQL, then 05 FastAPI, so the API uses a real database from day one.
 
-The teaching pattern used throughout this repository is:
-
-> **Concept → Simple Example → Real-World Example → Live Coding →
-> Exercise → Broken Code → Interview Questions → Advanced Discussion**
-
-## Learning rule
-
-Do not finish a topic when you can only reproduce code.
-
-Finish it when you can:
-
-1.  explain it without notes;
-2.  write a small example from an empty file;
-3.  explain why the code works;
-4.  debug a broken version;
-5.  give a real-world use case;
-6.  answer an interview follow-up;
-7.  explain it differently to a fresher and an experienced developer.
-
-## Suggested repository structure
-
-``` text
-python-corporate-trainer/
-├── README.md
-├── 01_fundamentals.md
-├── 02_collections_and_functions.md
-├── 03_python_internals.md
-├── 04_advanced_python.md
-├── 05_async_concurrency_memory.md
-├── 06_real_world_labs.md
-├── 07_broken_code_debugging.md
-├── 08_interview_questions.md
-└── trainer_notes.md
+## Topic folder layout (modules 01 to 03)
+```
+topic/
+  README.md     objectives, real-time example, lab
+  example.py    runnable trainer demo
+  exercise.py   starter file for learners
 ```
 
-## Official reference
-
-Python documentation: https://docs.python.org/3/
-
-Python tutorial: https://docs.python.org/3/tutorial/
-
-## Recommended practice
-
-For each topic, create a Python file in your own working repository:
-
-``` text
-examples/
-exercises/
-broken_code/
-mini_projects/
+## Setup
+```bash
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python 01-python-fundamentals/01-variables/example.py
 ```
 
-Do not copy solutions immediately. First attempt the problem yourself.
+More: [docs/training-flow.md](docs/training-flow.md), [docs/assessment.md](docs/assessment.md)

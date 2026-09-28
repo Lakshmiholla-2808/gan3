@@ -1,1 +1,9 @@
-# Add project-specific dependencies here.
+pytest
+fastapi
+uvicorn
+httpx
+sqlalchemy
+psycopg[binary]
+alembic
+mypy
+ruff
